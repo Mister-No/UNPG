@@ -663,6 +663,10 @@ nav ul li {
     border-left: 1px solid #e1e1e1;
 }
 
+.hidden_li {
+  visibility: hidden;
+}
+
 nav ul li a {
     display: block;
     width: 300px;
@@ -728,9 +732,26 @@ nav ul li:hover {
     position: relative;
 }
 
+.element_bis {
+  width: 320px;
+}
+
+.element_horizontal {
+    width: 960px;
+    height: 480px;
+}
+
+.element_vertical {
+    width: 480px;
+    height: 960px;
+    float: left;
+}
+
 .block_final {
-  width: 960px;
-  height: 960px;
+  width: 860px;
+  height: 860px;
+  padding: 50px;
+
 }
 
 .description {
@@ -740,6 +761,15 @@ nav ul li:hover {
   transform: translateY(-50%);
 }
 
+.description_bis {
+  width: 280px;
+  margin-top: 70%;
+}
+
+.description_vertical {
+  margin-top: 90%;
+}
+
 h4 {
   font-size: 40px;
   font-family: 'Roboto', sans-serif;
@@ -747,7 +777,6 @@ h4 {
 }
 
 h5 {
-  color : #5ac828;
   font-size: 18px;
   line-height: 2vh;
   font-family: 'Open sans', sans-serif;
@@ -788,47 +817,91 @@ h6 {
   font-family: 'Open sans', sans-serif;
   font-weight: lighter;
   margin: auto;
+  line-height: 25px;
 }
 
+.couleur_element {
+  background-color: #dcddde;
+}
 
 .couleur_environnement {
   background-color: #35ab52;
+}
+
+.typo_couleur_environnement {
+  color: #35ab52;
 }
 
 .couleur_engagement {
   background-color: #00aaa8;
 }
 
+.typo_couleur_engagement {
+  color: #00aaa8;
+}
+
 .couleur_legislation {
   background-color: #fcb034;
+}
+
+.typo_couleur_legislation {
+  color: #fcb034;
 }
 
 .couleur_sante {
   background-color: #f36d21;
 }
 
+.typo_couleur_sante {
+  color: #f36d21;
+}
+
 .couleur_technique {
   background-color: #9c2776;
+}
+
+.typo_couleur_technique {
+  color: #9c2776;
 }
 
 .couleur_transport {
   background-color: #23408f;
 }
 
+.typo_couleur_transport {
+  color: #23408f;
+}
+
 .couleur_livre {
   background-color: #628b9f;
+}
+
+.typo_couleur_livre {
+  color: #628b9f;
 }
 
 .couleur_developpement {
   background-color: #008dd3;
 }
 
+.typo_couleur_developpement {
+  color: #008dd3;
+}
+
 .couleur_vie {
   background-color: #adc6d1;
 }
 
+.typo_couleur_vie {
+  color: #adc6d1;
+}
+
 .couleur_europe {
   background-color: #00aaa8;
+}
+
+.typo_couleur_europe {
+  color: #00aaa8;
 }
 
 /* Footer */
