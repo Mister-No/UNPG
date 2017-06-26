@@ -45,11 +45,11 @@ hr {
 
 h1 {
     position: relative;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto slab', sans-serif;
     color: #ffffff;
     font-size: 80px;
     /*text-shadow: 0px 4px 4px black;*/
-    font-weight: medium;
+    font-weight: 400;
     height: 92px;
     width: 50%;
     text-align: center;
@@ -135,48 +135,48 @@ h2 {
 }
 
 @-moz-keyframes h2 {
-    0% {
-        right: -100%;
-    }
-    50% {
-        right: -1%;
-    }
-    75% {
-        right: 1%;
-    }
-    100% {
-        right: 0%;
-    }
+  0% {
+      right: -100%;
+  }
+  50% {
+      right: -0.5%;
+  }
+  75% {
+      right: 0.5%;
+  }
+  100% {
+      right: 0%;
+  }
 }
 
 @-webkit-keyframes h2 {
-    0% {
-        right: -100%;
-    }
-    50% {
-        right: -1%;
-    }
-    75% {
-        right: 1%;
-    }
-    100% {
-        right: 0%;
-    }
+  0% {
+      right: -100%;
+  }
+  50% {
+      right: -0.5%;
+  }
+  75% {
+      right: 0.5%;
+  }
+  100% {
+      right: 0%;
+  }
 }
 
 @keyframes h2 {
-    0% {
-        right: -100%;
-    }
-    50% {
-        right: -1%;
-    }
-    75% {
-        right: 1%;
-    }
-    100% {
-        right: 0%;
-    }
+  0% {
+      right: -100%;
+  }
+  50% {
+      right: -0.5%;
+  }
+  75% {
+      right: 0.5%;
+  }
+  100% {
+      right: 0%;
+  }
 }
 
 h3 {
@@ -221,6 +221,10 @@ h3 {
     top: 24%;
     width: 100%;
     margin-bottom: 30px;
+}
+
+.titre img {
+    position: relative;
     -webkit-animation-name: titre;
     -webkit-animation-duration: 1s;
     -webkit-animation-iteration-count: 1;
@@ -233,6 +237,10 @@ h3 {
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
+}
+
+.titre img:last-of-type {
+  display: none;
 }
 
 @-moz-keyframes titre {
@@ -459,10 +467,6 @@ h3 {
 /* Conteneur_accueil */
 
 main {
-  background-color: #f5f5f5;
-  background-image: url(../img/fond.png);
-  background-repeat: repeat;
-  background-size: contain;
   min-height: 200px;
   position: relative;
 }
@@ -1014,6 +1018,10 @@ footer {
   margin-left: 40px;
 }
 
+.adresse_footer p:last-child {
+  display: none;
+}
+
 .adresse_footer p {
   text-align: left;
   margin-top: 46px;
@@ -1333,17 +1341,25 @@ header p {
 
 @media screen and (max-width: 1024px) {
 
+.titre {
+  top: 32%;
+}
+
+h2 {
+  font-size: 24px;
+}
 
 }
 
 @media screen and (max-width: 768px) {
 
-.titre {
-  top: 30%;
+.titre img {
+    width: 60%;
+    margin-left: 20%;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 22px;
 }
 
 h3 {
@@ -1356,11 +1372,6 @@ figure img {
 }
 
 .contenu {
-  width: 100%;
-  height: 200px;
-}
-
-nav {
   display: none;
 }
 
@@ -1378,26 +1389,25 @@ nav ul {
 .developpement,
 .vie,
 .europe {
-    width: 100%;
+    width: 70%;
+    margin-top: -512px;
 }
 
 .description {
-    width: 310px;
     margin: auto;
-    padding-top: 50%;
-    transform: translateY(-15%);
+    padding-top: 92%;
 
 }
 
-.description_vertical {
-  transform: translateY(-10%);
+.image_granulats {
+  height: 100vh;
 }
 
 .element,
 .element_bis {
-  width: 50%;
-  height: auto;
-  height: 52%;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid #cccccc;
 }
 
 .element_vertical {
@@ -1433,10 +1443,21 @@ nav ul {
 
 .social_network {
   clear: both;
+  margin-left: 0px;
 }
 
 .download {
   margin-left: 20px;
+}
+
+.copyright ul {
+  width: 36%;
+}
+
+.copyright ul li:first-child,
+.copyright ul li:nth-child(2) {
+  display: none;
+
 }
 
 
@@ -1445,9 +1466,74 @@ nav ul {
 
 @media screen and (max-width: 420px) {
 
+.anchor {
+  margin-top: 12%;
+}
+
 header {
-  top: 26px;
-  right: -14%;
+  right: -10%;
+  margin: auto;
+  width: 80%;
+  top: 58%;
+  position: relative;
+  margin-top: 2%;
+  -webkit-animation-name: header;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-name: header;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  animation-name: header;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+@-moz-keyframes header {
+    0% {
+        right: -100%;
+    }
+    50% {
+        right: -11%;
+    }
+    75% {
+        right: -9%;
+    }
+    100% {
+        right: -10%;
+    }
+}
+
+@-webkit-keyframes header {
+  0% {
+      right: -100%;
+  }
+  50% {
+      right: -11%;
+  }
+  75% {
+      right: -9%;
+  }
+  100% {
+      right: -10%;
+  }
+}
+
+@keyframes header {
+  0% {
+      right: -100%;
+  }
+  50% {
+      right: -11%;
+  }
+  75% {
+      right: -9%;
+  }
+  100% {
+      right: -10%;
+  }
 }
 
 header img {
@@ -1458,20 +1544,26 @@ header img {
   top: 32%;
 }
 
-.titre img {
-    width: 80%;
-    margin-left: 10%;
+.titre img:first-of-type {
+  display: none;
+}
+
+.titre img:last-of-type {
+  display: block;
+  width: 80%;
+  margin-left: 10%;
 }
 
 h2 {
-  font-size: 12px;
+  display: none;
 }
 
 .logo {
-  width: 122px;
-  height: 62px;
-  bottom: 10px;
-  left: 10px;
+  width: 150px;
+  height: 72px;
+  position: relative;
+  top: 0px;
+  left: 54%;
 }
 
 .logo img {
@@ -1479,48 +1571,52 @@ h2 {
 }
 
 @-moz-keyframes logo {
-    0% {
-        bottom: 0px;
-    }
-    50% {
-        bottom: 14px;
-    }
-    75% {
-        bottom: 6px;
-    }
-    100% {
-        bottom: 10px;
-    }
+  0% {
+      top: -110px;
+  }
+  50% {
+      top: 4px;
+  }
+  75% {
+      top: -4px;
+  }
+  100% {
+      top: 0px;
+  }
 }
 
 @-webkit-keyframes logo {
   0% {
-      bottom: 0px;
+      top: -110px;
   }
   50% {
-      bottom: 14px;
+      top: 4px;
   }
   75% {
-      bottom: 6px;
+      top: -4px;
   }
   100% {
-      bottom: 10px;
+      top: 0px;
   }
 }
 
 @keyframes logo {
   0% {
-      bottom: 0px;
+      top: -110px;
   }
   50% {
-      bottom: 14px;
+      top: 4px;
   }
   75% {
-      bottom: 6px;
+      top: -4px;
   }
   100% {
-      bottom: 10px;
+      top: 0px;
   }
+}
+
+.contenu {
+  display: none;
 }
 
 .nav_responsive_bar ul {
@@ -1538,6 +1634,10 @@ main {
 
 h3 {
   font-size: 38px;
+}
+
+h4 {
+  margin-top: 72px;
 }
 
 figure {
@@ -1561,13 +1661,24 @@ figure img {
 .vie,
 .europe {
     width: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    top: 0px;
 }
 
-.description {
+/*.description {
     width: 80%;
     margin: auto;
     transform: translateY(-25%);
     padding-top: 50%;
+}*/
+
+.description {
+  width: 80%;
+  margin: auto;
+  transform: translateY(-12%);
+  padding-top: 20%;
+
 }
 
 .description_vertical {
@@ -1583,51 +1694,79 @@ figure img {
   clear: both;
 }
 
-.logo_footer {
-  width: auto;
-  height: auto;
-  clear: both;
+.element img {
+  margin-top: -10px;
+  margin-bottom: -10px;
+
 }
 
+.image_granulats {
+  height: 100vh;
+}
+
+.logo_footer,
 .adresse_footer,
 .social_network,
 .download {
 clear: both;
-height: 90px;
 width: auto;
+height: auto;
 margin-left: auto;
 margin-right: auto;
 margin-top: 20px;
-margin-bottom: 20px;
+margin-bottom: 10px;
 }
 
-.adresse_footer p {
-  margin-left: 20%;
+.logo_footer {
+    margin-left: 20px;
+}
+
+.logo_footer img {
+    margin-top: 0px;
+}
+
+.adresse_footer p:first-child {
+  display: none;
+}
+
+.adresse_footer p:last-child {
+  display: block;
   text-align: center;
+  margin-top: 0px;
 }
 
-.download img {
-  margin-top: 14px;
-  margin-left: 16px;
+.social_network a {
+  margin-top: 0px;
+  margin-left: 34px;
+}
+
+.download {
+display: none;
 
 }
 
 .infos {
-  width: 60%;
+  width: 70%;
 }
 
 .copyright {
-  width: 45%;
+  width: 100%;
 }
 
-.copyright p,
+.copyright p {
+  display: none;
+}
+
 .copyright ul {
   clear: both;
+  width: 74%;
 }
 
 .copyright p{
   width: 100%;
 }
+
+
 
 
 }
