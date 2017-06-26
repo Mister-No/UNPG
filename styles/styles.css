@@ -463,18 +463,28 @@ main {
   background-image: url(../img/fond.png);
   background-repeat: repeat;
   background-size: contain;
+  min-height: 200px;
+  position: relative;
 }
 
 
 /* Conteneur_Chiffres */
 
 section {
+    background-color: #f5f5f5;
+    background-image: url(../img/fond.png);
+    background-repeat: repeat;
+    background-size: contain;
     min-height: 100vh;
     width: 100%;
     text-align: center;
     position: relative;
     z-index: 4;
     color: #ffffff;
+}
+
+section.chiffres {
+
 }
 
 .chiffres_figure {
@@ -546,7 +556,6 @@ figcaption {
 
 section.contenu_principal {
     width: 100%;
-    min-height: 200px;
     z-index: 4;
 }
 
@@ -725,11 +734,13 @@ nav ul li:hover {
 .europe {
     display: none;
     width: 960px;
-    height: 1200px;
+    min-height: 1200px;
     position: relative;
     z-index: 6;
     margin: auto;
-    padding-top: 32px;
+    padding-top: 72px;
+    top: -40px;
+    margin-top: -512px;
 }
 
 .element {
