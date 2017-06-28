@@ -96,7 +96,8 @@ $('.navicon_off').click(function() {
     $('.conteneur_site').removeAttr('style');
     $('body').css('overflow-y', 'auto');
     $('.nav_responsive_bar').css('transform', 'translate(-100%)');
-    $('.navicon_on, nav').css('display', 'block');
+    $('.navicon_off, nav').css('display', 'none');
+    $('.navicon_on').css('display', 'block');
     $('.navicon').css('animation-name', 'navicon_off');
     $('.contenu').removeClass('green_gradient');
     $('.contenu').removeClass('lightblue_gradient');
