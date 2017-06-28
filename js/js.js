@@ -136,7 +136,7 @@ $('.navicon_off').click(function() {
 
 $('.environnement_link').click(function() {
 
-    $('.nav, .navicon_off, .image_granulats, .engagement, .legislation, .sante, .technique, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
+    $('nav, .navicon_off, .image_granulats, .engagement, .legislation, .sante, .technique, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
     $('.environnement, .navicon_on').css('display', 'block');
     $('.contenu').addClass('green_gradient');
     $('.button').attr('href', '#contenu_principal');
@@ -148,7 +148,7 @@ $('.environnement_link').click(function() {
 
 $('.engagement_link').click(function() {
 
-    $('.nav, .navicon_off, .image_granulats, .environnement, .legislation, .sante, .technique, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
+    $('nav, .navicon_off, .image_granulats, .environnement, .legislation, .sante, .technique, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
     $('.engagement, .navicon_on').css('display', 'block');
     $('.contenu').addClass('lightblue_gradient');
     $('.button').attr('href', '#contenu_principal');
@@ -160,7 +160,7 @@ $('.engagement_link').click(function() {
 
 $('.legislation_link').click(function() {
 
-    $('.nav, .navicon_off, .image_granulats, .environnement, .engagement, .sante, .technique, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
+    $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .sante, .technique, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
     $('.legislation, .navicon_on').css('display', 'block');
     $('.contenu').addClass('yellow_gradient');
     $('.button').attr('href', '#contenu_principal');
@@ -171,7 +171,7 @@ $('.legislation_link').click(function() {
 
 $('.sante_link').click(function() {
 
-    $('.nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .technique, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
+    $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .technique, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
     $('.sante, .navicon_on').css('display', 'block');
     $('.contenu').addClass('orange_gradient');
     $('.button').attr('href', '#contenu_principal');
@@ -183,7 +183,7 @@ $('.sante_link').click(function() {
 
 $('.technique_link').click(function() {
 
-    $('.nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
+    $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
     $('.technique, .navicon_on').css('display', 'block');
     $('.contenu').addClass('violet_gradient');
     $('.button').attr('href', '#contenu_principal');
@@ -195,7 +195,7 @@ $('.technique_link').click(function() {
 
 $('.transport_link').click(function() {
 
-    $('.nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .livre, .developpement, .vie, .europe').css('display', 'none');
+    $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .livre, .developpement, .vie, .europe').css('display', 'none');
     $('.transport, .navicon_on').css('display', 'block');
     $('.contenu').addClass('blue_gradient');
     $('.button').attr('href', '#contenu_principal');
@@ -207,7 +207,7 @@ $('.transport_link').click(function() {
 
 $('.livre_link').click(function() {
 
-    $('.nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .transport, .developpement, .vie, .europe').css('display', 'none');
+    $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .transport, .developpement, .vie, .europe').css('display', 'none');
     $('.livre, .navicon_on').css('display', 'block');
     $('.contenu').addClass('grayblue_gradient');
     $('.button').attr('href', '#contenu_principal');
@@ -219,7 +219,7 @@ $('.livre_link').click(function() {
 
 $('.developpement_link').click(function() {
 
-    $('.nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .transport, .livre, .vie, .europe').css('display', 'none');
+    $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .transport, .livre, .vie, .europe').css('display', 'none');
     $('.developpement, .navicon_on').css('display', 'block');
     $('.contenu').addClass('pastelblue_gradient');
     $('.button').attr('href', '#contenu_principal');
@@ -231,7 +231,7 @@ $('.developpement_link').click(function() {
 
 $('.vie_link').click(function() {
 
-    $('.nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .transport, .livre, .developpement, .europe').css('display', 'none');
+    $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .transport, .livre, .developpement, .europe').css('display', 'none');
     $('.vie, .navicon_on').css('display', 'block');
     $('.contenu').addClass('gray_gradient');
     $('.button').attr('href', '#contenu_principal');
@@ -243,7 +243,7 @@ $('.vie_link').click(function() {
 
 $('.europe_link').click(function() {
 
-    $('.nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .transport, .livre, .developpement, .vie').css('display', 'none');
+    $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .transport, .livre, .developpement, .vie').css('display', 'none');
     $('.europe, .navicon_on').css('display', 'block');
     $('.contenu').addClass('bluegreen_gradient');
     $('.button').attr('href', '#contenu_principal');
