@@ -2,9 +2,14 @@ $(document).ready(function(){
 
 var screenWidth = window.innerWidth ;
 
-if (screenWidth > '420' && screenWidth < '1000') {
-  $('.download').insertBefore('.social_network');
-}
+    $(window).on('resize', function(){
+          var win = $(this); //this = window
+          if (win.width() <= 950) {
+            $('.download').insertBefore('.social_network');
+          } else {
+            $('.download').insertAfter('.social_network');
+          }
+    });
 
 /* Ancre */
 
@@ -99,35 +104,10 @@ $('.navicon_off').click(function() {
     $('.navicon_off, nav').css('display', 'none');
     $('.navicon_on').css('display', 'block');
     $('.navicon').css('animation-name', 'navicon_off');
-    $('.contenu').removeClass('green_gradient');
-    $('.contenu').removeClass('lightblue_gradient');
-    $('.contenu').removeClass('yellow_gradient');
-    $('.contenu').removeClass('orange_gradient');
-    $('.contenu').removeClass('violet_gradient');
-    $('.contenu').removeClass('blue_gradient');
-    $('.contenu').removeClass('grayblue_gradient');
-    $('.contenu').removeClass('pastelblue_gradient');
-    $('.contenu').removeClass('gray_gradient');
-    $('.contenu').removeClass('bluegreen_gradient');
     $('.button').attr('href', '#accueil');
     if (screenWidth > '420' && screenWidth < '800') {
       $('.contenu').css('display', 'none');
     }
-    /***$('.button').attr('href', '#accueil');
-
-      if(mouseScroll < $('.chiffres').offset().top - ($(window).height() / 1.2)) {
-
-      $('.chiffres').each(function(i){
-
-         $('.navicon_on, nav, .image_granulats').css('display', 'block');
-         $('.navicon_off, .environnement, .engagement, .legislation, .sante, .technique, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
-         $('.navicon').css('animation-name', 'navicon_off');
-         $('.contenu').removeClass('green_gradient');
-
-      });
-
-    }***/
-
 
 });
 
@@ -139,23 +119,36 @@ $('.environnement_link').click(function() {
 
     $('nav, .navicon_off, .image_granulats, .engagement, .legislation, .sante, .technique, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
     $('.environnement, .navicon_on').css('display', 'block');
+    $('.contenu').removeClass('green_gradient');
+    $('.contenu').removeClass('lightblue_gradient');
+    $('.contenu').removeClass('yellow_gradient');
+    $('.contenu').removeClass('orange_gradient');
+    $('.contenu').removeClass('violet_gradient');
+    $('.contenu').removeClass('blue_gradient');
+    $('.contenu').removeClass('grayblue_gradient');
+    $('.contenu').removeClass('pastelblue_gradient');
+    $('.contenu').removeClass('gray_gradient');
+    $('.contenu').removeClass('bluegreen_gradient');
     $('.contenu').addClass('green_gradient');
     $('.button').attr('href', '#contenu_principal');
-    if (screenWidth > '420' && screenWidth < '1000') {
-      $('.contenu').css('display', 'block');
-    }
-
 });
 
 $('.engagement_link').click(function() {
 
     $('nav, .navicon_off, .image_granulats, .environnement, .legislation, .sante, .technique, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
     $('.engagement, .navicon_on').css('display', 'block');
+    $('.contenu').removeClass('green_gradient');
+    $('.contenu').removeClass('lightblue_gradient');
+    $('.contenu').removeClass('yellow_gradient');
+    $('.contenu').removeClass('orange_gradient');
+    $('.contenu').removeClass('violet_gradient');
+    $('.contenu').removeClass('blue_gradient');
+    $('.contenu').removeClass('grayblue_gradient');
+    $('.contenu').removeClass('pastelblue_gradient');
+    $('.contenu').removeClass('gray_gradient');
+    $('.contenu').removeClass('bluegreen_gradient');
     $('.contenu').addClass('lightblue_gradient');
     $('.button').attr('href', '#contenu_principal');
-    if (screenWidth > '420' && screenWidth < '1000') {
-      $('.contenu').css('display', 'block');
-    }
 
 });
 
@@ -163,22 +156,37 @@ $('.legislation_link').click(function() {
 
     $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .sante, .technique, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
     $('.legislation, .navicon_on').css('display', 'block');
+    $('.contenu').removeClass('green_gradient');
+    $('.contenu').removeClass('lightblue_gradient');
+    $('.contenu').removeClass('yellow_gradient');
+    $('.contenu').removeClass('orange_gradient');
+    $('.contenu').removeClass('violet_gradient');
+    $('.contenu').removeClass('blue_gradient');
+    $('.contenu').removeClass('grayblue_gradient');
+    $('.contenu').removeClass('pastelblue_gradient');
+    $('.contenu').removeClass('gray_gradient');
+    $('.contenu').removeClass('bluegreen_gradient');
     $('.contenu').addClass('yellow_gradient');
     $('.button').attr('href', '#contenu_principal');
-    if (screenWidth > '420' && screenWidth < '1000') {
-      $('.contenu').css('display', 'block');
-    }
+
 });
 
 $('.sante_link').click(function() {
 
     $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .technique, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
     $('.sante, .navicon_on').css('display', 'block');
+    $('.contenu').removeClass('green_gradient');
+    $('.contenu').removeClass('lightblue_gradient');
+    $('.contenu').removeClass('yellow_gradient');
+    $('.contenu').removeClass('orange_gradient');
+    $('.contenu').removeClass('violet_gradient');
+    $('.contenu').removeClass('blue_gradient');
+    $('.contenu').removeClass('grayblue_gradient');
+    $('.contenu').removeClass('pastelblue_gradient');
+    $('.contenu').removeClass('gray_gradient');
+    $('.contenu').removeClass('bluegreen_gradient');
     $('.contenu').addClass('orange_gradient');
     $('.button').attr('href', '#contenu_principal');
-    if (screenWidth > '420' && screenWidth < '1000') {
-      $('.contenu').css('display', 'block');
-    }
 
 });
 
@@ -186,11 +194,18 @@ $('.technique_link').click(function() {
 
     $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .transport, .livre, .developpement, .vie, .europe').css('display', 'none');
     $('.technique, .navicon_on').css('display', 'block');
+    $('.contenu').removeClass('green_gradient');
+    $('.contenu').removeClass('lightblue_gradient');
+    $('.contenu').removeClass('yellow_gradient');
+    $('.contenu').removeClass('orange_gradient');
+    $('.contenu').removeClass('violet_gradient');
+    $('.contenu').removeClass('blue_gradient');
+    $('.contenu').removeClass('grayblue_gradient');
+    $('.contenu').removeClass('pastelblue_gradient');
+    $('.contenu').removeClass('gray_gradient');
+    $('.contenu').removeClass('bluegreen_gradient');
     $('.contenu').addClass('violet_gradient');
     $('.button').attr('href', '#contenu_principal');
-    if (screenWidth > '420' && screenWidth < '1000') {
-      $('.contenu').css('display', 'block');
-    }
 
 });
 
@@ -198,11 +213,18 @@ $('.transport_link').click(function() {
 
     $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .livre, .developpement, .vie, .europe').css('display', 'none');
     $('.transport, .navicon_on').css('display', 'block');
+    $('.contenu').removeClass('green_gradient');
+    $('.contenu').removeClass('lightblue_gradient');
+    $('.contenu').removeClass('yellow_gradient');
+    $('.contenu').removeClass('orange_gradient');
+    $('.contenu').removeClass('violet_gradient');
+    $('.contenu').removeClass('blue_gradient');
+    $('.contenu').removeClass('grayblue_gradient');
+    $('.contenu').removeClass('pastelblue_gradient');
+    $('.contenu').removeClass('gray_gradient');
+    $('.contenu').removeClass('bluegreen_gradient');
     $('.contenu').addClass('blue_gradient');
     $('.button').attr('href', '#contenu_principal');
-    if (screenWidth > '420' && screenWidth < '1000') {
-      $('.contenu').css('display', 'block');
-    }
 
 });
 
@@ -210,11 +232,18 @@ $('.livre_link').click(function() {
 
     $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .transport, .developpement, .vie, .europe').css('display', 'none');
     $('.livre, .navicon_on').css('display', 'block');
+    $('.contenu').removeClass('green_gradient');
+    $('.contenu').removeClass('lightblue_gradient');
+    $('.contenu').removeClass('yellow_gradient');
+    $('.contenu').removeClass('orange_gradient');
+    $('.contenu').removeClass('violet_gradient');
+    $('.contenu').removeClass('blue_gradient');
+    $('.contenu').removeClass('grayblue_gradient');
+    $('.contenu').removeClass('pastelblue_gradient');
+    $('.contenu').removeClass('gray_gradient');
+    $('.contenu').removeClass('bluegreen_gradient');
     $('.contenu').addClass('grayblue_gradient');
     $('.button').attr('href', '#contenu_principal');
-    if (screenWidth > '420' && screenWidth < '1000') {
-      $('.contenu').css('display', 'block');
-    }
 
 });
 
@@ -222,11 +251,18 @@ $('.developpement_link').click(function() {
 
     $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .transport, .livre, .vie, .europe').css('display', 'none');
     $('.developpement, .navicon_on').css('display', 'block');
+    $('.contenu').removeClass('green_gradient');
+    $('.contenu').removeClass('lightblue_gradient');
+    $('.contenu').removeClass('yellow_gradient');
+    $('.contenu').removeClass('orange_gradient');
+    $('.contenu').removeClass('violet_gradient');
+    $('.contenu').removeClass('blue_gradient');
+    $('.contenu').removeClass('grayblue_gradient');
+    $('.contenu').removeClass('pastelblue_gradient');
+    $('.contenu').removeClass('gray_gradient');
+    $('.contenu').removeClass('bluegreen_gradient');
     $('.contenu').addClass('pastelblue_gradient');
     $('.button').attr('href', '#contenu_principal');
-    if (screenWidth > '420' && screenWidth < '1000') {
-      $('.contenu').css('display', 'block');
-    }
 
 });
 
@@ -234,11 +270,18 @@ $('.vie_link').click(function() {
 
     $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .transport, .livre, .developpement, .europe').css('display', 'none');
     $('.vie, .navicon_on').css('display', 'block');
+    $('.contenu').removeClass('green_gradient');
+    $('.contenu').removeClass('lightblue_gradient');
+    $('.contenu').removeClass('yellow_gradient');
+    $('.contenu').removeClass('orange_gradient');
+    $('.contenu').removeClass('violet_gradient');
+    $('.contenu').removeClass('blue_gradient');
+    $('.contenu').removeClass('grayblue_gradient');
+    $('.contenu').removeClass('pastelblue_gradient');
+    $('.contenu').removeClass('gray_gradient');
+    $('.contenu').removeClass('bluegreen_gradient');
     $('.contenu').addClass('gray_gradient');
     $('.button').attr('href', '#contenu_principal');
-    if (screenWidth > '420' && screenWidth < '1000') {
-      $('.contenu').css('display', 'block');
-    }
 
 });
 
@@ -246,16 +289,19 @@ $('.europe_link').click(function() {
 
     $('nav, .navicon_off, .image_granulats, .environnement, .engagement, .legislation, .sante, .technique, .transport, .livre, .developpement, .vie').css('display', 'none');
     $('.europe, .navicon_on').css('display', 'block');
+    $('.contenu').removeClass('green_gradient');
+    $('.contenu').removeClass('lightblue_gradient');
+    $('.contenu').removeClass('yellow_gradient');
+    $('.contenu').removeClass('orange_gradient');
+    $('.contenu').removeClass('violet_gradient');
+    $('.contenu').removeClass('blue_gradient');
+    $('.contenu').removeClass('grayblue_gradient');
+    $('.contenu').removeClass('pastelblue_gradient');
+    $('.contenu').removeClass('gray_gradient');
+    $('.contenu').removeClass('bluegreen_gradient');
     $('.contenu').addClass('bluegreen_gradient');
     $('.button').attr('href', '#contenu_principal');
-    if (screenWidth > '420' && screenWidth < '1000') {
-      $('.contenu').css('display', 'block');
-    }
 
 });
-
-
-
-
 
 });
